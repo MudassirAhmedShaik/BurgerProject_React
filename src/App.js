@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import "./styles.css";
+import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello I'm React</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Layout>
+          <BurgerBuilder />
+        </Layout>
+      </div>
+    );
+  }
 }
+
+export default App;
