@@ -82,6 +82,7 @@ class BurgerBuilder extends Component {
           modalClosed={this.cancelPurchasingHandler}
         >
           <OrderSummary
+            price={this.state.totalPrice}
             cancelled={this.cancelPurchasingHandler}
             continued={this.continuePurchaseHandler}
             ingredients={this.state.ingredients}
